@@ -64,10 +64,8 @@ function numberClickedHandler(event) {
 //strange case if the result of an operation is negative then the first variable contains a "-", therefore you have to account for that negative which explains the first part of the if statement.
 
 function operatorClickedHandler(event) {
-  if (displayString === "-") {
-  }
   if (
-    parseInt(displayString) > 0 &&
+    displayString.length > 0 &&
     (displayString.includes("-") ||
       displayString.includes("+") ||
       displayString.includes("*") ||
