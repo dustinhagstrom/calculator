@@ -1,0 +1,131 @@
+#background {
+  background-color: #293241;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator {
+  background-color: #e0fbfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50vw;
+  height: 70vh;
+  padding: 5%;
+  border-radius: 15%;
+}
+
+#display {
+  background-color: #293241;
+  border-radius: 15px;
+  height: 150px;
+  width: 100%;
+}
+
+#display-result {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+#calculator-operation {
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "add min mul div"
+    "sev ate nin eql"
+    "for fiv six eql"
+    "one two thr eql"
+    "zer per clr eql";
+}
+
+.operations {
+  background-color: #3d5a80;
+}
+
+button {
+  border-radius: 15px;
+  height: 55px;
+  width: 82px;
+  font-size: 35px;
+  color: snow;
+  border: none;
+  justify-self: center;
+  align-self: center;
+}
+
+.numbers {
+  background-color: #97c1d9;
+}
+
+#number-equals {
+  background-color: #ee6c4d;
+  width: 82px;
+  align-self: stretch;
+  height: auto;
+  font-size: 35px;
+  border-radius: 15px;
+  color: snow;
+  border: none;
+  justify-self: center;
+}
+
+#number-1 {
+  grid-area: one;
+  justify-self: ;
+}
+
+#number-2 {
+  grid-area: two;
+}
+
+#number-3 {
+  grid-area: thr;
+}
+
+#number-4 {
+  grid-area: for;
+}
+
+#number-5 {
+  grid-area: fiv;
+}
+
+#number-6 {
+  grid-area: six;
+}
+
+#number-7 {
+  grid-area: sev;
+}
+
+#number-8 {
+  grid-area: ate;
+}
+
+#number-9 {
+  grid-area: nin;
+}
+
+#number-0 {
+  grid-area: zer;
+}
+
+#number-period {
+  grid-area: per;
+}
+
+#number-clear {
+  grid-area: clr;
+}
+
+#number-equals {
+  grid-area: eql;
+}
