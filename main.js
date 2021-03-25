@@ -61,12 +61,17 @@ function numberClickedHandler(event) {
 
 //this function adds a char that subtracts, adds, multiplies, or divides to the display if one of those chars is not already in the display. If one of those chars already in display then it calls the function that processes an equal click to perform the math on display -> put result in first variable -> display the result and also then display the new operator char. at the end it also directs new button presses to second variable by changing boolean to false.
 
+//strange case if the result of an operation is negative then the first variable contains a "-", therefore you have to account for that negative which explains the first part of the if statement.
+
 function operatorClickedHandler(event) {
+  if (displayString === "-") {
+  }
   if (
-    displayString.includes("-") ||
-    displayString.includes("+") ||
-    displayString.includes("x") ||
-    displayString.includes("÷")
+    parseInt(displayString) > 0 &&
+    (displayString.includes("-") ||
+      displayString.includes("+") ||
+      displayString.includes("*") ||
+      displayString.includes("/"))
   ) {
     equalsClickedHandler();
   }
